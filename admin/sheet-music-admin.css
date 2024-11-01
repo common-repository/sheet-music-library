@@ -1,0 +1,76 @@
+/* Empty piece toggles */
+.empty.piece-attachment .preview-link,
+.empty.piece-attachment .change,
+.empty.piece-attachment #score-attachment-title,
+.empty.piece-attachment #parts-attachment-title,
+.empty.piece-attachment #audio-attachment-title,
+.empty.piece-attachment #score-image {
+	display: none;
+}
+
+.piece-attachment .upload {
+	display: none;
+}
+
+.empty.piece-attachment .upload {
+	display: inline-block;
+}
+
+.empty.piece-attachment #audio-preview-container {
+	display: none;
+}
+
+/* Custom Meta Box Styling */
+.piece-attachment, #video-embed-preview {
+	width: calc(50% - 14px);
+	overflow: hidden;
+}
+
+.sml-row-title {
+	display: block;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.piece-attachment .button {
+	margin-left: 4px;
+}
+
+.empty.piece-attachment .button {
+	margin-left: 0;
+}
+
+.piece-attachment .deletion span {
+	color: #a00;
+	text-decoration: underline;
+	margin-left: 8px;
+}
+
+#score-image {
+	float: right;
+	padding: 0 0 8px 12px;
+	max-width: 50%;
+}
+
+#piece-video-url {
+	width: 450px;
+	max-width: 100%;
+	margin-left: 4px;
+}
+
+/* Audio preview iframe (similar implementation to wpviews) */
+iframe[seamless] {
+	background-color: transparent;
+	border: 0px none transparent;
+	padding: 0px;
+	overflow: hidden;
+}
+
+#audio-preview-container {
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin-top: 4px;
+}
+
+

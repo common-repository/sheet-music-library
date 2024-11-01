@@ -1,0 +1,12 @@
+.sheet-music-search-form .search-submit {
+	/* hide visually and preserve for screen readers */
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+}
+
+.sheet-music-search-form .search-field {
+	width: 100%;
+}

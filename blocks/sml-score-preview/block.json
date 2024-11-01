@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name" : "sheet-music-library/score-preview",
+	"title" : "Sheet Music Score Preview",
+	"category" : "sheet-music-library",
+	"icon" : "media-audio",
+	"description" : "Displays sheet music score preview image, linked to score, unless direct download is not available for a single sheet music post.",
+	"supports" : {
+		"align" : true,
+		"html" : false,
+		"reusable" : false
+	},
+	"textdomain" : "sheet-music-library",
+	"editorScript" : "file:./sml-score-preview-block-script.js",
+	"style" : "file:./sml-score-preview-block-style.css",
+	"example": {}
+}

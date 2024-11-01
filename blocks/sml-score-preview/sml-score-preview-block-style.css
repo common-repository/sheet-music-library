@@ -1,0 +1,12 @@
+
+.wp-block-sheet-music-library-score-preview img.score-preview {
+	max-width: 100%;
+	width: calc(100% - 18em);
+}
+
+/* one-column */
+@media screen and (max-width:920px) {
+	.wp-block-sheet-music-library-score-preview img.score-preview {
+		width: 100%;
+	}
+}

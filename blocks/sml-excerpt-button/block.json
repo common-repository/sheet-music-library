@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name" : "sheet-music-library/excerpt-button",
+	"title" : "Sheet Music Excerpt Button Link",
+	"category" : "sheet-music-library",
+	"icon" : "button",
+	"description" : "Displays link to view or view and download a single sheet music piece.",
+	"supports" : {
+		"align" : true,
+		"html" : false,
+		"reusable" : false
+	},
+	"textdomain" : "sheet-music-library",
+	"editorScript" : "file:./sml-excerpt-button-block-script.js",
+	"style" : "file:./sml-excerpt-button-block-style.css",
+	"example": {}
+}

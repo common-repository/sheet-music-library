@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name" : "sheet-music-library/search-form",
+	"title" : "Sheet Music Search Form",
+	"category" : "sheet-music-library",
+	"icon" : "search",
+	"description" : "Displays a search form that provides results from pieces in the sheet_music post type only.",
+	"supports" : {
+		"align" : true,
+		"html" : false,
+		"reusable" : false
+	},
+	"textdomain" : "sheet-music-library",
+	"editorScript" : "file:./sml-search-block-script.js",
+	"style" : "file:./sml-search-block-style.css",
+	"example": {}
+}

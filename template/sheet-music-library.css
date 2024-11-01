@@ -1,0 +1,280 @@
+/**
+ * Default styling for sheet music libraries, designed to be compatible with as many themes as possible.
+ */
+
+/* Single piece view */
+.piece .piece-meta.wp-caption {
+	background: rgba(204,204,204,.5);
+	float: right;
+	padding: 10px 12px;
+	margin-top: 0;
+	width: 16em;
+	max-width: 100%;
+}
+
+.wp-block-post.sheet_music .download-box a.button,
+.piece .download-box a.button {
+	border: 3px solid rgba(0,0,0,.8);
+	display: inline-block;
+	padding: 6px 14px;
+	margin: 0 .6em .6em 0;
+	transition: .1s background-color ease-in-out,
+				.1s color ease-in-out;
+	text-decoration: none;
+}
+
+.wp-block-post.sheet_music .download-box a.button:hover,
+.piece .download-box a.button:hover,
+.wp-block-post.sheet_music .download-box a.button:focus,
+.piece .download-box a.button:focus,
+.wp-block-post.sheet_music .download-box a.button:active,
+.piece .download-box a.button:active {
+	background: rgba(0,0,0,.85);
+	color: #fff;
+	text-decoration: none;
+}
+
+.wp-block-post.sheet_music .taxonomy-box {
+	margin-bottom: 0.6em;
+}
+
+.download-box .piece-modified-text {
+	margin: 0 0 .5em 0;
+	font-size: .8em;
+	font-style: italic;
+}
+
+.download-box .piece-download-terms {
+	margin: 0 0 1em 0;
+	font-size: .8em;
+}
+
+.piece-meta .taxonomy-box {
+	border-top: 1px solid rgba(0,0,0,.8);
+	padding-top: .8em;
+}
+
+.piece-meta .taxonomy-box p {
+	margin: 0 0 .5em 0;
+}
+
+img.score-preview {
+	max-width: 100%;
+	width: calc(100% - 18em);
+}
+
+/* unset sidebar assumption for block queries */
+.wp-block-post img.score-preview {
+	width: auto;
+}
+
+.wp-audio-shortcode,
+.wp-video {
+	margin-bottom: 1em; /* Many themes don't add any margin here */
+}
+
+/* one-column */
+@media screen and (max-width:920px) {
+	.piece .piece-meta.wp-caption {
+		width: 100%;
+	}
+
+	img.score-preview {
+		width: 100%;
+	}	
+}
+
+/* Default archive listing views */
+.archive-piece .piece-meta .taxonomy-box {
+	border-top: none;
+	padding-top: 0;
+	margin-bottom: 1em;
+}
+
+.archive-piece .piece-meta .taxonomy-box p {
+	display: inline-block;
+}
+
+.archive-piece .piece-meta .taxonomy-box p:after {
+	content: "/";
+	margin: 0 .5em 0 1em;
+}
+
+.archive-piece .piece-meta .taxonomy-box p:last-child:after {
+	display: none;
+}
+
+.archive-piece .download-box a.button {
+	margin: 0;
+}
+
+.archive .sheet_music .entry-footer,
+.search .sheet_music .entry-footer,
+.archive .sheet_music .entry-meta,
+.search .sheet_music .entry-meta {
+	display: none; /* Attempt to hide irrelevant post object meta. */
+}
+
+/* Sheet music table shortcodes */
+.sheet-music-table tbody td {
+	font-size: .8em;
+}
+
+.sheet-music-table th small {
+	font-weight: normal;
+	font-style: italic;
+}
+
+.sheet-music-search-form .search-submit {
+	display: none;
+}
+
+.sheet-music-table .mejs-container {
+	margin: 6px 0 2px 0;
+}
+
+/* Sheet Music Block Pattern Styles */
+.wp-block-group.sheet-music-query-group-compact {
+	border: 1px solid;
+	margin: 0 1em 1em 0;
+	padding: 1em;
+}
+
+.sheet-music-query-group-compact ul {
+	margin: 0;
+	padding: 0;
+}
+
+.sheet-music-query-group-compact h2 {
+	margin: 0;
+	border-bottom: 1px solid;
+	text-align: center;
+}
+
+.sheet-music-query-group-compact h3 {
+	margin: 1em 0 .25em 0;
+}
+
+/* Condense audio player to play/pause buttons only */
+.sheet_music .condensed-audio {
+	float: left;
+	width: 80px;
+	height: 80px;
+    padding: 10px 20px 10px 0;
+	overflow: hidden;
+}
+
+.sheet_music .condensed-audio:empty {
+	width: 0;
+	height: 0;
+	padding: 0;
+}
+
+/* Override inline JS style for sizing */
+.sheet_music .condensed-audio .mejs-container[style] {
+	height: 60px !important;
+	width: 60px !important;
+	margin: 0;
+}
+
+.sheet_music .condensed-audio .mejs-controls a.mejs-horizontal-volume-slider,
+.sheet_music .condensed-audio .mejs-controls .mejs-time.mejs-currenttime-container,
+.sheet_music .condensed-audio .mejs-controls .mejs-time-rail,
+.sheet_music .condensed-audio .mejs-controls .mejs-time.mejs-duration-container,
+.sheet_music .condensed-audio .mejs-controls .mejs-button.mejs-volume-button.mejs-mute {
+    display: none;
+}
+
+.sheet_music .condensed-audio .mejs-controls {
+	height: 60px;
+	padding: 0;
+}
+
+.sheet_music .condensed-audio .mejs-button > button {
+	height: 60px;
+	width: 60px;
+	padding: 10px;
+	margin: 0;
+	background-size: 1200px, 360px;
+    filter: invert(1); /* Set white icons to black. Needs to be unset on dark backgrounds. */
+}
+
+.sheet_music .condensed-audio .mejs-button > button:hover,
+.sheet_music .condensed-audio .mejs-button > button:focus {
+    opacity: 0.7;
+}
+
+.sheet_music .condensed-audio .mejs-pause  > button {
+	background-position-x: -60px;
+	background-position-y: 0;
+}
+
+.sheet_music .condensed-audio .mejs-replay > button {
+	background-position-x: -480px;
+	background-position-y: 0;
+}
+
+.sheet_music .condensed-audio .mejs-container,
+.sheet_music .condensed-audio .mejs-container .mejs-controls {
+	background: transparent;
+}
+
+
+/* Smaller condensed audio player */
+.sheet_music .condensed-audio.small {
+	width: 40px;
+	height: 40px;
+	padding: 2px 2px 2px 0;
+}
+
+/* Override inline JS style for sizing */
+.sheet_music .condensed-audio.small .mejs-container[style] {
+	height: 40px !important;
+	width: 40px !important;
+}
+
+.sheet_music .condensed-audio.small .mejs-controls {
+	height: 40px;
+}
+
+.sheet_music .condensed-audio.small .mejs-button > button {
+	height: 40px;
+	width: 40px;
+	padding: 10px;
+	background-size: 800px, 240px;
+}
+
+.sheet_music .condensed-audio.small .mejs-pause  > button {
+	background-position-x: -40px;
+	background-position-y: 0;
+}
+
+.sheet_music .condensed-audio.small .mejs-replay > button {
+	background-position-x: -320px;
+	background-position-y: 0;
+}
+
+
+.wp-block-post-title .sml-restricted:before,
+.entry-title .sml-restricted:before {
+	content: "\2217";
+	vertical-align: text-top;
+	padding-right: .2em;
+	text-decoration: none;
+	border: none;
+	box-shadow: none;
+}
+
+.sml-table-title.sml-restricted {
+	position: relative;
+	margin-left: .7em;
+}
+
+.sml-table-title.sml-restricted:before {
+	content: "\2217";
+	position: absolute;
+	left: -.7em;
+	display: inline-block;
+	line-height: 1em;
+	top: 0;
+}

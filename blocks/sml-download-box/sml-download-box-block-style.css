@@ -1,0 +1,30 @@
+
+.wp-block-sheet-music-library-download-box .download-box a.button {
+	border: 3px solid rgba(0,0,0,.8);
+	display: inline-block;
+	padding: 6px 14px;
+	margin: 0 .6em .6em 0;
+	transition: .1s background-color ease-in-out,
+				.1s color ease-in-out;
+	text-decoration: none;
+}
+
+.wp-block-sheet-music-library-download-box .download-box a.button:hover,
+.wp-block-sheet-music-library-download-box .download-box a.button:focus,
+.wp-block-sheet-music-library-download-box .download-box a.button:active {
+	background: rgba(0,0,0,.85);
+	color: #fff;
+	text-decoration: none;
+}
+
+.wp-block-sheet-music-library-download-box .download-box .piece-modified-text {
+	margin: 0 0 .5em 0;
+	font-size: .8em;
+	font-style: italic;
+}
+
+.wp-block-sheet-music-library-download-box .download-box .piece-download-terms {
+	margin: 0 0 1em 0;
+	font-size: .8em;
+}
+

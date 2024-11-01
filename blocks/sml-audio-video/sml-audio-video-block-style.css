@@ -1,0 +1,10 @@
+
+.wp-block-sheet-music-library-audio-video .piece-recording {
+	width: 100%;
+	min-width: 300px; /* allows alignments to function correctly. */
+}
+
+.wp-block-sheet-music-library-audio-video .wp-audio-shortcode,
+.wp-block-sheet-music-library-audio-video .wp-video {
+	margin-bottom: 1em; /* Many themes don't add any margin here */
+}

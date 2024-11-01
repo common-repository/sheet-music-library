@@ -1,0 +1,27 @@
+{
+	"apiVersion": 2,
+	"name" : "sheet-music-library/audio-video",
+	"title" : "Sheet Music Audio/Video",
+	"category" : "sheet-music-library",
+	"icon" : "format-video",
+	"description" : "Displays piece audio and/or video for a single sheet music post.",
+	"supports" : {
+		"align" : true,
+		"html" : false,
+		"reusable" : false
+	},
+	"attributes" : {
+		"audio" : {
+			"type" : "boolean",
+			"default" : true
+		},
+		"video" : {
+			"type" : "boolean",
+			"default" : true
+		}
+	},
+	"textdomain" : "sheet-music-library",
+	"editorScript" : "file:./sml-audio-video-block-script.js",
+	"style" : "file:./sml-audio-video-block-style.css",
+	"example": {}
+}

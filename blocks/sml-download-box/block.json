@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name" : "sheet-music-library/download-box",
+	"title" : "Sheet Music Download Box",
+	"category" : "sheet-music-library",
+	"icon" : "download",
+	"description" : "Displays sheet music file download buttons (score and parts) or direct download not available markup for a single sheet music post.",
+	"supports" : {
+		"align" : true,
+		"html" : false,
+		"reusable" : false
+	},
+	"textdomain" : "sheet-music-library",
+	"editorScript" : "file:./sml-download-box-block-script.js",
+	"style" : "file:./sml-download-box-block-style.css",
+	"example": {}
+}
